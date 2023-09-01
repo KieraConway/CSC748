@@ -1,0 +1,7 @@
+How about some (very) light reverse engineering? :)
+
+Sure, I guess you could solve this manually with IDA and a calculator, but can you write a more robust solution with pwntools alone? You might find this documenation useful...
+
+https://docs.pwntools.com/en/stable/elf/elf.html#example-usage
+
+csc748.hostbin.org:7012
