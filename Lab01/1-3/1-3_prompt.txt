@@ -1,0 +1,10 @@
+Lab 1-3
+
+One more pwntools warm up challenge! This builds on what you learned from the last two, with a twist. Note that this binary is "position independent", meaning your code will need to do one small calculation. Can you figure out the correct address before the timer runs out? :)
+
+These might be helpful...
+
+https://ir0nstone.gitbook.io/notes/types/stack/pie
+https://www.programiz.com/python-programming/methods/built-in/int
+
+csc748.hostbin.org:7013
