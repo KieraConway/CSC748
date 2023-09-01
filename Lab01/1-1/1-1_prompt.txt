@@ -1,0 +1,12 @@
+Lab 1-1
+100
+Let's get familiar with pwntools! The following documentation will be helpful...
+
+https://github.com/Gallopsled/pwntools-tutorial/blob/master/tubes.md
+https://docs.pwntools.com/en/stable/tubes/sockets.html
+https://docs.pwntools.com/en/stable/tubes.html
+The binary is attached, feel free to reverse engineer it if you like, but that's probably not necessary to solve this particular challenge. Should be easily solvable without any RE.
+
+Are you fast enough to get the flag?
+
+csc748.hostbin.org:7011
