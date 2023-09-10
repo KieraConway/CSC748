@@ -1,0 +1,5 @@
+Lab 2-1
+100
+This is allllllmost the same challenge as Lab 1-2. The program didn't intend to let you call another function, but I bet you can trick it into doing so anyway. :)
+
+csc748.hostbin.org:7021
