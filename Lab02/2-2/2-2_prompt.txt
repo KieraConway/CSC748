@@ -1,0 +1,8 @@
+Lab 2-2
+100
+Nearly the same challenge as Lab 2-1, but without that handy "win()" function to just jump to. For this one you'll need to craft some shellcode of own, place it on the stack, then find a way to redirect the instruction pointer to it. Can you find an instruction somewhere within the programs code which will redirect execution to the stack? :)
+
+Fun fact, this is nearly the same attack that Aleph One described in his seminal paper "Smashing the Stack for Fun and Profit" back in 1996! A must read for those entering the field of software exploitation.
+
+http://www.phrack.org/issues/49/14.html#article
+csc748.hostbin.org:7022

@@ -1,0 +1,30 @@
+Code trampoline ideas
+●
+jmp esp
+●
+call esp
+●
+push esp; ret
+●
+mov eax, esp; jmp eax
+●
+xchg eax, esp; call eax
+●
+push esp; pop ebx; jmp ebx
+●
+… etc … etc … etc ...
+
+
+Ropper is helpful here
+●
+List lots of instructions (extremely verbose)
+–
+ropper -f <inputfile>
+●
+Find “jmp <reg>” instructions
+–
+ropper -f <inputfile> -j <reg>
+●
+Find specific opcode bytes
+–
+ropper -f <inputfile> --opcode <hex>
