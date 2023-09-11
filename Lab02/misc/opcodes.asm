@@ -20,6 +20,6 @@ _start:
 
 	push esp               ; 54
 	pop ebx                ; 5b
-	jmp ebx				;ff e3
+	jmp ebx					;ff e3
 
 	

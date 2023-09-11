@@ -1,0 +1,9 @@
+Lab 2-3
+100
+This one is a stretch goal. More complex than the others, but totally solvable!
+
+This is fundamentally the same challenge as Lab 2-2, but you'll need to think outside the box a little to make it work. Remember that buffer overflows are not limited to character arrays (strings)! Also remember that there is more than one way to redirect the instruction pointer on to the stack.
+
+Can you find a way to control RIP? Can you find a way to place shellcode in memory and land on it? :)
+
+csc748.hostbin.org:7023
