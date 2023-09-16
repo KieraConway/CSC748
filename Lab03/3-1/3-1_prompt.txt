@@ -1,0 +1,10 @@
+Lab 3-1
+100
+To complete this challenge you'll need to find a way to leak the stack cookie before performing your buffer overflow attack. Read through the code carefully, do you see a way to trick the program into revealing values from memory that it shouldn't? This code is a bit leaky... :)
+
+Once you've obtained the cookie it's back to smashing the stack like normal. Just don't forget to place the correct cookie value in your input buffer so you don't get caught!
+
+Looking for further reading? This writeup from SANS is quite nice:
+
+https://www.sans.org/blog/stack-canaries-gingerly-sidestepping-the-cage/
+csc748.hostbin.org:7031
