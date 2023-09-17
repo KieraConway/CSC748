@@ -1,0 +1,7 @@
+Lab 3-2
+100
+This one should be quite straight forward. Remember, the stack cookie is ONLY meant to protect the function's return address and saved frame-pointer. Other variables on the stack may be overwritten before the stack cookie is reached. Can you trick this program into popping a shell without even bothering to overwrite the return address?
+
+Why pick the lock when you can simply remove the hinges. :)
+
+csc748.hostbin.org:7032

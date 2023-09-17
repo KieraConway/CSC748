@@ -1,0 +1,9 @@
+Lab 3-3
+100
+This one's a stretch goal. There are no memory leaks, or convenient variables to overwrite. Just your buffer, and the stack cookie. Walk past the end of the array and it's going to crash. About as realistic as it gets! :)
+
+But this program is different from the others... It handles it's own network connections, listening on a port and forking a child process every time a new user connects. Again, more realistic. What implications does this have for the stack cookies used in the child processes? How will they be generated?
+
+To be clear, this challenge will require more code and some light bruteforce to solve. In my testing it took a few minutes and a few hundred connections to land a shell. Intelligent guess-work is acceptable here. Also, once again I annticipate this being a more difficult challenge, so I only expect to see your best attempt. You don't need to solve this to receive full credit, just give it your best effort!
+
+csc748.hostbin.org:7033
