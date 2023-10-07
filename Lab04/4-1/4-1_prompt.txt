@@ -1,0 +1,9 @@
+Lab 4-1
+100
+
+This one should be relatively simple, as it's almost the same as one of the examples shown in class. No long complicated ROP chain needed here, ret2libc should work. Why on earth is the program showing all that sensitive "debugging" information??? That seems excesive.
+
+Here's a nice, concise blog post you might find helpful. :)
+
+https://blog.techorganic.com/2015/04/21/64-bit-linux-stack-smashing-tutorial-part-2/
+csc748.hostbin.org:7041
