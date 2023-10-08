@@ -1,0 +1,7 @@
+Lab 5-2
+100
+This challenge may look familiar, as it's repurposed from a previous lab problem. This time you'll need to bypass ASLR to get your shell though!
+
+The second demo shown in the lecture is relevant here. Think small, and simple. No fancy ROP chains or shellcode necessary, a single byte should be sufficient. :)
+
+csc748.hostbin.org:7052
