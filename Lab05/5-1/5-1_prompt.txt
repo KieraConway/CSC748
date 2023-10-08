@@ -1,0 +1,12 @@
+Lab 5-1
+100
+How about a nice game of ping pong! Send me some data, I'll send it back. I'm really bad at typing though, so it's entirely possible I've mixed up some numbers in this program. I sure hope that doesn't affect its functionality. :)
+
+This one is similar to the first example shown in the lecture. No stack cookie to bypass, but ASLR and DEP/NX are both enabled. Can you get it to leak a pointer? Once you know the base address it should be easy.
+
+This might be helpful (see read):
+
+https://github.com/Naetw/CTF-pwn-tips#overflow
+Fun fact, this is how old-school Internet Relay Chat (IRC) servers kept track of connected clients back in the day (see RFC 2812, sec 3.7.2-3).
+
+csc748.hostbin.org:7051
