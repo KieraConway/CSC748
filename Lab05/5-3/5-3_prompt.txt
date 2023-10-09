@@ -1,0 +1,13 @@
+Stretch goal! This one's a doozy. :)
+
+In the lecture I referenced a third technique (memory spraying) for bypassing ASLR, but I only discussed it from a theoretical standpoint. Can you put that idea into practice to land a shell?
+
+A few tips:
+
+There's a lot left to chance here, so it's entirely possible a good exploit will still only work with a 50% success rate. That's ok! Mine works most of the time, but not all.
+Your exploit will need to send a bunch of data over the network, meaning it will run slowly. Mine takes a couple minutes to run. That is normal and expected.
+Play around with the allocation size, and allocation number. You need to allocate a lot of memory, but the more you allocate, the slower it runs. Find a balance.
+Test test test on the local binary first, to save yourself time of testing remotely. :)
+As always, you need only make an attempt at this challenge in order to receive full credit. I'd like to see everyone at least try, give it your best effort, but I'm willing to award full points even if you don't fully solve this one. That said, if you do I will be very impressed! Good luck!
+
+csc748.hostbin.org:7053

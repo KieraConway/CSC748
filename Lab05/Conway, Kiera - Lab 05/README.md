@@ -46,8 +46,15 @@ This folder contains lab files and scripts for the lab 05 ASLR challenges
 
 ## Lab 5-3
 
-	[todo: description]
-		
+	The exploit for this lab establishes a connection to a remote server and interacts with the binary, where it then exploits an ASLR vulnerability using Method 3: Heap-Spraying Attack. The primary goal of this exploit is to invoke a shell by manipulating the binary's heap memory. This process involves deploying NOPs (No-Operation instructions) and a unique shellcode, through which the binary's execution flow is manipulated to gain control over the target system. 	
+	
+	The first step involves the allocation of heap memory within the target binary. To achieve this, the script crafts a NOP sled  with a predetermined length (32MB in this case) using the Shellcraft library. The script also generates a shellcode using Shellcraft, which is then combined with the NOP sled to create an NOP Payload. The NOP sled serves as a designated landing spot for the program's execution. Instead of a direct jump to a specific function (e.g., 'win'), the program effectively 'slides' along the NOPs until it encounters and executes the shellcode.
+	
+	Once the NOP payload is crafted and delivered, the script redirects the program's execution flow to the established NOP sled. This is accomplished by transmitting a unique payload designed to overflow the buffer and overwrite the return address. This payload consists of 32 'A' bytes followed by a carefully estimated target address; This address was calculated by simulating the exploit in a controlled environment and identifying an address that consistently fell within the NOP sled.
+	
+	The program proceeds with its execution, and when it attempts to return from parsing user input within the 'search()' function, it is redirected to the NOP sled due to the modified return address. In the event of a successful execution, the script enters an interactive session, allowing the user to interact with the compromised program and obtain the flag.	
+	
+	
 	Lab 5-3 Files:
 
 		5-3_lab.bin:				binary file for lab 5-3
@@ -67,3 +74,16 @@ This folder contains lab files and scripts for the lab 05 ASLR challenges
 	- scripts can be executed using the format `python3 programName`. For example:
 		> python3 5-2_script.py
 
+	- Notes for Lab 5-3: 
+	
+		- This exploit may not always succeed with 100% certainty as the return address is a predefined estimation. If the script crashes without establishing a reverse shell, it indicates that the estimated return address was outside the NOP sled range. In such instances, you should consider re-running the script, as new addresses will be dynamically allocated.
+	
+		- To enhance the success rate of the exploit, the number of bytes covered by the NOP sled may be increased by modifying the 'SLED_LENGTH' variable. Please be mindful that as 'SLED_LENGTH' increases, both the success rate and execution time will also proportionally increase.
+
+		- In the context of this script, debugging with the standard command:
+			> p = gdb.debug("./5-3_lab.bin")
+		may lead to a signal trap within the __ctype_init() function. To work around this issue, an alternative method has been employed for local debugging by attaching GDB to the running process using the following commands:
+			> p = process("./5-3_lab.bin")
+			> gdb.attach(p)  # Attach GDB to the running process
+
+		It is important that these two lines are executed together to ensure a seamless debugging experience and prevent potential errors. This adjustment enables effective local debugging without encountering the signal trap issue observed when using the standard gdb.debug() method.
