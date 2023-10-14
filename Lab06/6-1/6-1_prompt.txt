@@ -1,0 +1,5 @@
+Lab 6-1
+100
+Log in with a valid username and PIN code, and this program will give you a shell. The username is easy to identify, but the PIN code is randomly generated, so unless you're really, really lucky you'll never be able to guess it. No buffer overflows here either, so it must be totally secure, right??
+
+csc748.hostbin.org:7061

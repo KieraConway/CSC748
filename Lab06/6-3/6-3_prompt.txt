@@ -1,0 +1,16 @@
+Lab 6-3
+100
+An homage to a problem I used to assign my CSC-150 students; read a list of integers and print the largest and the smallest. Simple enough! I've also added the option to enter a "large" list or a "small" list, depending on how many integers you've got. I also plan to add authentication in the future so it's super secure, but that's a work in progress. Give it a try! :)
+
+This one is a stretch goal. The core vulnerability is an uninitialized variable, but that isn't enough alone, so you'll need to use that vulnerability to artificially create another more serious vulnerability in order to get code execution. There are a few additional hurdles you'll need to leap along the way...
+
+	1. There's no convenient "shell()" function here. You'll need to build it yourself.
+	2. NX is enabled, so ROP is probably in order.
+	3. There are other variables on the stack which may get clobbered. Think carefully about how you overwrite them.
+	4. There is no "/bin/sh" string, so you'll need to create it yourself.
+
+If you're unsure how to accomplish (4) above, check out these links. The technique they describe should work well here too:
+
+	- https://int0x33.medium.com/day-7-rop-emporium-write4-64bit-c6f9f64748ea
+	- https://book.hacktricks.xyz/reversing-and-exploiting/linux-exploiting-basic-esp/rop-syscall-execv
+csc748.hostbin.org:7063

@@ -1,0 +1,8 @@
+Lab 6-2
+100
+This program is two programs in one. It can both record messages and solve math equations! I even designed the math system to be modular so that it's easy to add new operation functions in the future. Function pointers are the best. :)
+
+I assume you are all familiar with the concept of a function pointer, but in case not, here's a good place to start:
+
+https://www.cprogramming.com/tutorial/function-pointers.html
+csc748.hostbin.org:7062
