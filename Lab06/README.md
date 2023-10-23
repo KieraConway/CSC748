@@ -1,10 +1,4 @@
-# CSC 748 - Software Exploitation
-## Lab 06 Assignments
-
-**Student Name:** Kiera Conway
-**Due Date:** October 22, 2023
-
-This folder contains lab files and scripts for the lab 06 Uninitialized Variable/Function challenges
+# Lab 06  - Uninitialized Variable/Function
 
 ## Lab 6-1
 	
