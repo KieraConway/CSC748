@@ -121,9 +121,9 @@
    - Each file is named in the format: "6-X_Title," where "X" corresponds to the lab number, and "Title" describes the file's purpose or content.
 	
    - All python scripts require Python 3, pwntools
-      > sudo apt-get install python3
-      > pip install pwntools
+      > sudo apt-get install python3 <br>
+      > pip install pwntools <br>
       *installation instructions assume Linux-based systems*
-		
-   - scripts can be executed using the format `python3 programName`. For example:
+	
+   - scripts can be executed using the format `python3 programName`. 
       > python3 6-2_script.py
