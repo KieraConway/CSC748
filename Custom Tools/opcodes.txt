@@ -1,0 +1,11 @@
+00000000  FFE4              jmp esp
+00000002  FFD4              call esp
+00000004  54                push esp
+00000005  C3                ret
+00000006  89E0              mov eax,esp
+00000008  FFE0              jmp eax
+0000000A  94                xchg eax,esp
+0000000B  FFD0              call eax
+0000000D  54                push esp
+0000000E  5B                pop ebx
+0000000F  FFE3              jmp ebx
