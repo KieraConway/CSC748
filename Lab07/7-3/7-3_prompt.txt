@@ -1,0 +1,11 @@
+Lab 7-3
+100
+This one is special! Rather than exploiting a user-mode program, this challenge involves exploiting a Linux kernel module. This vulnerable code is actually running in the kernel! The principles are all the same, but you'll interface with the vulnerable code using IOCTLs instead of standard input/output. Example code demonstrating this is attached.
+
+Start by trying to identify the race condition vulnerability. Do you see a small window of time between when a sensitive value is checked, and when it is used? If so, can you alter that value during the race window to trick the kernel module into doing something it shouldn't? Linux pthreads will probably be helpful here! If your code performs an IOCTL in one thread, the other thread will continue running while the kernel handles that request. If you're unsure where to start, you might Google "Linux race condition CTF" and read some write-ups for similar challenges in past capture-the-flag events. There are several good ones. :)
+
+Note: As stated in the lecture videos, remember that for this challenge you will actually need to SSH (log in) to the csc748.hostbin.org server and run your exploit on that machine. Write access is disabled in the user's home directory, but you are welcome to cd /tmp and then mkdir a new directory to hold your files. Give it a somewhat random name so other students won't find it.
+
+Also, since kernel modules need to be built for each individual system, you'll need to build it yourself if you wish to run it locally. To do so, place the .c file and Makefile in the same directory and type make. Then insert the resulting module into your kerel by running sudo insmod lab7-3.ko.
+
+ssh lab7-3@csc748.hostbin.org (pw: lab7-3)

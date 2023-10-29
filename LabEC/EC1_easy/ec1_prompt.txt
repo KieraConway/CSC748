@@ -1,0 +1,9 @@
+Morris Worm (easy)
+100
+In November of 1988 the internet changed forever when the very first self-propegating worm, the Morris Worm, began spreading like wildfire. This clever little program took advantage of week passwords, as well as a buffer overflow vulnerability in the BSD fingerd service to spread. Here's the actual vulnerable source code that the Morris Worm was able to exploit! Do you see the bug? :)
+
+http://www.retro11.de/ouxr/43bsd/usr/src/etc/fingerd.c.html
+
+Just for fun, and for practice, and to connect our studies with context from the past, I have adapted this code to run as a CTF challenge. I made a point to modify it as little as possible, including omitting compiler options that might not have existed at the time (hint hint). Can you find a way to exploit it to gain a shell, just like the original Morris Worm did back in the day?
+
+csc748.hostbin.org:7001

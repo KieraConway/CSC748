@@ -1,0 +1,9 @@
+Lab 7-1
+100
+Pass this program a file name as an argument and it will read it for you! Unless of course you want to read the "flag.txt" file, that's disallowed. Reading symlinks is also disallowed, as they might be referencing the flag file. Sorry! :)
+
+Unfortunatly it's not quite that simple though. The file system is a shared resource, and it is entirely possible that other programs might change the file in question while this program is using it. Could that have security implications? Can you find a way to abuse this failed assumption in order to trick the program into reading the flag file?
+
+Note: As stated in the lecture videos, remember that for this challenge you will actually need to SSH (log in) to the csc748.hostbin.org server and run your exploit on that machine. Write access is disabled in the user's home directory, but you are welcome to cd /tmp and then mkdir a new directory to hold your files. Give it a somewhat random name so other students won't find it.
+
+ssh lab7-1@csc748.hostbin.org (pw: lab7-1)

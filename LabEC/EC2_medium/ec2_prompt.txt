@@ -1,0 +1,9 @@
+Morris Worm (medium)
+100
+If only we had all these fancy exploit mitigation technologies back in the 80's, the Morris Worm might not have been able to exploit that vulnerability in Fingerd. Although... not all of them would have been 100% effective... :)
+
+This challenge is built from the exact same source code as the previous, but has some modern exploit mitigation technologies applied. This will make it more challenging to exploit, but not impossible. Can you still find a way?
+
+A hint is available, if you need it.
+
+csc748.hostbin.org:7002

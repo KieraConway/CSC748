@@ -1,0 +1,9 @@
+Morris Worm (hard)
+100
+Yet another version of the same program, but with a few important changes that should make this one even trickier! You won't find a nice 'syscall' instruction here, but maybe there's another way to reach execve? Are you up to the challenge? :)
+
+Hints are available if you get stuck.
+
+(Note: This binary is compiled with 'gcov' coverage instrumentation. I did that purely to increase the code size, thus increasing the number of ROP gadgets available. Don't get bogged down in the fact that the compiled code looks weird; it's fundamentally the same program.)
+
+csc748.hostbin.org:7003

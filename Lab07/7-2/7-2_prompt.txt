@@ -1,0 +1,7 @@
+Lab 7-2
+100
+This program is somewhat of a do-nothing-machine. It makes copies of the flag.txt file and then securely deletes them so that nobody can read them! Not terribly useful, but at least that should be safe... right? :)
+
+Note: As stated in the lecture videos, remember that for this challenge you will actually need to SSH (log in) to the csc748.hostbin.org server and run your exploit on that machine. Write access is disabled in the user's home directory, but you are welcome to cd /tmp and then mkdir a new directory to hold your files. Give it a somewhat random name so other students won't find it.
+
+ssh lab7-2@csc748.hostbin.org (pw: lab7-2)
