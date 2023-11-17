@@ -1,0 +1,7 @@
+Lab 8-1
+100
+This program feels like a work in progress. Looks like the author is trying to build some kind of archery simulator, but currently all it does is ask for player names and then take one shot, which always hits the bullseye. Not exactly a triple-A game, but maybe good enough for early-access on Steam. :)
+
+To exploit this program you will first need to groom the heap into a desirable state, such that later allocations will be guarenteed to end up in the correct order. Can you force the program to lay those chunks out it a way that then allows you to exploit the heap overflow vulnerability? :)
+
+csc748.hostbin.org:7081

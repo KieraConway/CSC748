@@ -1,0 +1,7 @@
+Lab 8-2
+100
+I built a very simple note-taking app! The user can create new notes, view their notes, edit notes, and delete notes. I'm positive there are no buffer overflows in this code, so it should be safe to put online! Give it a try. :)
+
+To exploit this program you'll need to think outside the box a bit. The logic is clearly not sound; what happens if you ask it to do things out of order? Can you trick the program into using free'd memory? From there, can you trick the program into giving you access to another part of memory that you shouldn't normally have access to?
+
+csc748.hostbin.org:7082
