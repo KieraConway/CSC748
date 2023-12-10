@@ -1,0 +1,7 @@
+Lab 9-2
+100
+Those dang hackers keep finding ways to exploit my "notes" app. I've updated it to version 0.3, hopefully it's totally secure this time. This update addresses a double-free vulnerability from version 0.2, and completely removes the ability to view edit or view notes! Take that, hackers. :) Oh yes, it also adds the ability to read a file from the disk, but I've hard-coded the name to "not_the_flag.txt" so that the flag file can't possibly ever be read. Should be fine.
+
+To solve this challenge you will need to trick the program into allocating a chunk which overlaps that filename chunk, and then write data to that overlapping chunk such that it clobbers the filename.
+
+csc748.hostbin.org:7092

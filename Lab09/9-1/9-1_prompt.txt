@@ -1,0 +1,7 @@
+Lab 9-1
+100
+I updated my "notes" application to version 0.2! :) This update patches that nasty use-after-free bug you previously exploited. It also doubles the number of notes you can save, from 16 to 32. I hope you like it! Oh ya, and one other addition... this version allows you to load the flag data into a heap chunk, but will not allow you to read that data. That should be safe,... right?
+
+To solve this challenge you will need to exploit a double-free vulnerability in order to force the flag’s chunk to be allocated in the same location as another chunk you control and can read.
+
+csc748.hostbin.org:7091
